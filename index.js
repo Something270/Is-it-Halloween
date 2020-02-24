@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 //definir puerto
 const port = 3000;
-
+app.use(express.static('public'));
 app.set('view engine', 'ejs')
 const specialDay = 21;
 //month is base 0
